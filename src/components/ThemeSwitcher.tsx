@@ -11,7 +11,7 @@ export default function ThemeSwitcher() {
             <button
                 onClick={() => theme == "dark"? setTheme('light'): setTheme("dark")}
                 className=''>
-                    dark mode
+                    Dark Mode
             </button>
         </div>
     );

@@ -5,13 +5,13 @@ export default function Header() {
         <header className="w-full max-w-[1024px] px-4 py-4 mx-auto">
             <div className="flex items-center justify-between">
                 <div>
-                    <ul className="flex items-center gap-3">
-                        <li>menu</li>
-                        <li>menu</li>
+                    <ul className="flex items-center gap-6">
+                        <li>Codes</li>
+                        <li>+ Dicas</li>
                         <li><ThemeSwitcher /></li>
                     </ul>
                 </div>
-                <div className="flex items-center gap-3">
+                <div className="flex items-center gap-6">
                     GitHub
                 </div>
             </div>

@@ -1,7 +1,10 @@
+import { SearchBar } from "@/components/Search";
+
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      Linux Terminal Codes     
+    <main className="flex flex-col items-center justify-between p-24">
+      <div>Linux Terminal Codes</div>
+      <div className="p-10"><SearchBar /></div>
     </main>
   );
 }
