@@ -1,11 +1,11 @@
 import type { Metadata } from "next";
-import { Roboto } from "next/font/google";
-import "./globals.css";
+import { Inter } from "next/font/google";
 import { ThemeProvider } from "@/providers/ThemesProvider";
 import Header from "@/components/Header"
+import "./globals.css";
 
 
-const roboto = Roboto({ weight:"400", subsets: ["latin"] });
+const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Linux Terminal Codes",
@@ -19,7 +19,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={roboto.className}>
+      <body className={inter.className}>
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>          
           <Header />
           {children}

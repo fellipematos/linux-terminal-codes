@@ -11,7 +11,7 @@ export default function ThemeSwitcher() {
             <button
                 onClick={() => theme == "dark"? setTheme('light'): setTheme("dark")}
                 className=''>
-                    Dark Mode
+                    <svg xmlns="http://www.w3.org/2000/svg" width="1.6em" height="1.6em" viewBox="0 0 16 16"><path fill="currentColor" d="M8 1a7 7 0 1 0 0 14A7 7 0 0 0 8 1m0 13V2a6 6 0 1 1 0 12"/></svg>
             </button>
         </div>
     );
