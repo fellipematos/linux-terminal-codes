@@ -1,8 +1,9 @@
 import type { Metadata } from "next";
 import { Roboto } from "next/font/google";
 import "./globals.css";
-import { ThemeProvider } from "@/providers/themes-provider";
-import ThemeSwitcher from "@/components/theme-switcher";
+import { ThemeProvider } from "@/providers/ThemesProvider";
+import Header from "@/components/Header"
+
 
 const roboto = Roboto({ weight:"400", subsets: ["latin"] });
 
@@ -19,8 +20,8 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={roboto.className}>
-        <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
-          <ThemeSwitcher />
+        <ThemeProvider attribute="class" defaultTheme="system" enableSystem>          
+          <Header />
           {children}
         </ThemeProvider>
       </body>
