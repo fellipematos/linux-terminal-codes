@@ -26,7 +26,6 @@ export default function Header() {
                 <div>
                     <ul className="flex items-center gap-6">
                         <li className="text-sm font-medium pl-2"><Link href="/">HOME</Link></li>
-                        <li className="text-sm font-medium pl-2"><Link href="codes">CODES</Link></li>
                         <li className="text-sm font-medium pl-2"><Link href="dicas">+ DICAS</Link></li>
                     </ul>
                 </div>
